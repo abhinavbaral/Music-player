@@ -4,4 +4,14 @@ let arr = [
     {songName : "Singinin the Rain",url:"./Assets/song/Singin in the Rain (Full Song_Dance - 52) - Gene Kelly - Musical Romantic Comedies - 1950s Movies.mp3",img:".Assets/Img/R (1).jpg"},
     {songName : "The Sound of Music",url:"./Assets/song/The Sound of Music  - THE SOUND OF MUSIC (1965).mp3",img:".Assets/Img/OIP (1).jpg"}
 ]
-console.log(arr)
+var clutter = ""
+arr.forEach(Function(){
+    clutter += `<div class="card">
+            <div class="firstp">
+              <img src="https://th.bing.com/th/id/OIP.ZHoXFxuoSy4e3o-XVWqxDwHaKS?rs=1&pid=ImgDetMain" alt=" Albuim cover The Wizard of OZ ">
+              <h2>Over the Rainbow</h2>
+            </div>
+            <h6>2:43</h6> 
+          </div>  `
+})
+document.querySelector(#reco)
