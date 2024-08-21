@@ -27,6 +27,10 @@ html, body {
   width: 45%;
   height: 100%;
   background-color: #333;
+  background-image: url(https://th.bing.com/th/id/OIP.ZHoXFxuoSy4e3o-XVWqxDwHaKS?rs=1&pid=ImgDetMain);
+  background-size: cover;
+  background-position: top;
+
 }
 
 #last {
@@ -53,6 +57,11 @@ html, body {
   border-top: 1px solid #555;
   padding: 15px 10px;
 }
+
+.card:hover{
+  background-color: #1e1e1e
+}
+
 .card:nth-last-child(1){
   border-bottom: 1px solid #555;
 }
@@ -79,4 +88,34 @@ align-items: center;
   font-weight: 00;
 }
 
+/* Manual code ---- PLAYER DIV */
+
+#player {
+  height: 15%;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#player h3 {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+#player h3 i{
+  font-size: 24px;
+
+}
+
+#player h3:active {
+  scale: 0.93;
+}
 
