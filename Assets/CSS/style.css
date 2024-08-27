@@ -7,10 +7,12 @@
   color: #fff;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   background-color: aliceblue;
+  cursor: pointer;
 }
 
 /* Manual code ---- MAIN DIV */
@@ -22,6 +24,9 @@ html, body {
   display: flex;
   padding: 5vw 10vw;
 }
+
+/* Inside main */
+/* Manual code ---- First And Last Div   */
 
 #first {
   width: 45%;
@@ -40,17 +45,21 @@ html, body {
   padding: 0 3vw;
 }
 
-#last h3{
+#last h3 {
   font-size: 40px;
 }
 
-#reco{
+/* Manual code ---- Recommendation  */
+
+#reco {
   height: 85%;
   margin-top: 30px;
   /* background-color : red; */
 }
 
-.card{
+/* Manual code ---- Class card  */
+
+.card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,42 +67,54 @@ html, body {
   padding: 15px 10px;
 }
 
-.card:hover{
+.card:hover {
   background-color: #1e1e1e
 }
 
-.card:nth-last-child(1){
+.card:nth-last-child(1) {
   border-bottom: 1px solid #555;
 }
 
 .card .firstp {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.card img{
+.card img {
   height: 55px;
   width: 55px;
   object-fit: cover;
   object-position: top;
   margin-right: 20px;
 }
-.card h2{
+
+.card h2 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.card h6{
+.card h6 {
   font-size: 16PX;
   font-weight: 00;
 }
+/* Manual code ---- secmain  */
 
+#secmain {
+  width: 100%;
+  height: 15%;
+  background-color: rebeccapurple;
+  display: flex;
+  padding: 2vw 2vw;
+  /* cursor: pointer; */
+}
+
+ /* Iside secmain */
 /* Manual code ---- PLAYER DIV */
 
 #player {
   height: 15%;
   width: 100%;
-  background-color: #333;
+  /* background-color: #333; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +131,7 @@ align-items: center;
 }
 
 
-#player h3 i{
+#player h3 i {
   font-size: 24px;
 
 }
@@ -119,3 +140,19 @@ align-items: center;
   scale: 0.93;
 }
 
+
+.player2 {
+  /* background: #fff; */
+  border-radius: 8px;
+  padding: 20px;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/*  button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} */

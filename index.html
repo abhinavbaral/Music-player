@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Remix Icon Link For Icons  -->
-    <link   href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Remix Icon Link For Icons  -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <!-- CSS -->
-    <link rel="stylesheet" href="Assets/CSS/style.css" />
-  </head>
-  <body>
-    <!-- Main Div -->
-    <div id="main">
-      <!-- First And Last Div  -->
-      <div id="first"></div>
-      <div id="last">
-        <h3>Recommendation</h3>
-        <div id="reco">
-          <!--  Multiple song card (IMBD top 100 songs)-->
-          <!-- <div class="card">
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+</head>
+
+<body>
+  <!-- Main Div -->
+  <div id="main">
+        <!-- First And Last Div  -->
+    <div id="first"></div>
+    <div id="last">
+      <h3>Recommendation</h3>
+      <div id="reco">
+        <!--  Multiple song card (IMBD top 100 songs)-->
+        <!-- <div class="card">
             <div class="firstp">
               <img src="https://th.bing.com/th/id/OIP.ZHoXFxuoSy4e3o-XVWqxDwHaKS?rs=1&pid=ImgDetMain" alt=" Albuim cover The Wizard of OZ ">
               <h2>Over the Rainbow</h2>
             </div>
             <h6>2:43</h6> 
           </div>   -->
-          <!-- <div class="card">
+        <!-- <div class="card">
             <div class="firstp">
               <img src="https://th.bing.com/th/id/R.854caa98ec1a5f47226502ec578b7cb7?rik=zvOZGCW2UfD6Ow&pid=ImgRaw&r=0" alt=" Albuim cover Casablanca ">
               <h2>As Time Goes By</h2>
@@ -47,13 +49,26 @@
         </div> -->
       </div>
     </div>
-    <div id="player">
-      <h3 id="backward"> <i class="ri-skip-back-fill"> </i></h3>
-      <h3 id="play"> <i class="ri-play-fill"></i> </h3>
-      <h3 id="pause"> <i class="ri-pause-fill"></i></h3> 
-      <h3 id="forward"> <i class="ri-skip-forward-fill"> </i></h3>  
+  </div>
+    <div id="secmain">
+      <div id="player">
+        <h3 id="backward"> <i class="ri-skip-back-fill"> </i></h3>
+        <h3 id="play"> <i class="ri-play-fill"></i> </h3>
+        <h3 id="pause"> <i class="ri-pause-fill"></i></h3>
+        <h3 id="forward"> <i class="ri-skip-forward-fill"> </i></h3>
+      </div>
+      <div class="player2">
+        <audio id="audio" src="Assets/song/Casablanca - As Time Goes By - Original Song by Sam (Dooley Wilson).mp3"></audio>
+        <label for="volumeControl">Volume</label>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5" />
+        <br>
+        <label for="progressControl">Progress</label>
+        <input type="range" id="progressControl" min="0" max="100" step="1" value="0" />
+      </div>
     </div>
+
     <!-- JS Script -->
     <script src="Assets/JS/script.js"></script>
-  </body>
+</body>
+
 </html>
