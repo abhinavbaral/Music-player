@@ -40,7 +40,7 @@ arr.forEach((song) => {
 // Insert the HTML content into the DOM
 document.querySelector("#reco").innerHTML = clutter;
 
-Let  audio = document.getElementById("audio");
+let  audio = document.getElementById("audio");
 // const playPauseBtn = document.getElementById("playPauseBtn");
 // const stopBtn = document.getElementById("stopBtn");
 
